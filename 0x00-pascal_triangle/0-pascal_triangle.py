@@ -2,6 +2,8 @@
 """
 pascal triangle
 """
+
+
 def pascal_triangle(j):
     """
     get row of pascal triangle
@@ -21,7 +23,7 @@ def pascal_triangle(j):
             # return all_list.append(prev_list.copy)
         else:
             all_list = [[1], [1, 1]]
-            for _ in range(j -2):
+            for _ in range(j - 2):
 
                 new_lis = all_list[-1]
                 new = []
@@ -32,4 +34,3 @@ def pascal_triangle(j):
                 all_list.append(new)
 
     return all_list
-    
